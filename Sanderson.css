@@ -53,6 +53,14 @@ header nav a:not(:last-child) {
     margin-right: 0;
 }
 
+header nav a:hover {
+    background-color: #9b287b;
+    color: #fff;
+    border-radius: 6px;
+    transform: scale(1.08);
+    transition: all 0.2s ease;
+}
+
 body{
     background-color: #EEE8DC;
 }
