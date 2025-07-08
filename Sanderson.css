@@ -3,7 +3,7 @@ header {
     grid-template-columns: 200px 1fr;
     grid-template-rows: auto auto;
     align-items: center;
-    height: 220px;
+    max-height: 220px;
     position: relative;
 }
 
@@ -36,7 +36,7 @@ header nav {
     margin-top: 10px;
     padding: 0;
     background-color: #429ea6;
-    height: 200%;
+    height: 50px;
     border: 2px solid #32230F;
 }
 
@@ -57,8 +57,8 @@ header nav a:hover {
     background-color: #9b287b;
     color: #fff;
     border-radius: 6px;
-    transform: scale(1.08);
-    transition: all 0.2s ease;
+    transform: scale(1);
+    transition: all 0.5s ease;
 }
 
 body{
@@ -69,6 +69,9 @@ footer{
     background-color: #EEE8DC;
 }
 
-main{
+main {
     background-color: #EEE8DC;
+    height: 100%;
+    width: 100%;
+    margin-top: 75px;
 }
