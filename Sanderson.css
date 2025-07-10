@@ -65,17 +65,15 @@ header nav a:hover {
     transition: all 0.5s ease;
 }
 
-body{
+body {
     background-color: #EEE8DC;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     margin: 50px;
     padding: 40px;
-}
-
-footer{
-    background-color: #EEE8DC;
-}
-
-main {
     background-color: #EEE8DC;
     height: 100%;
     width: 100%;
@@ -85,6 +83,13 @@ main {
     grid-template-rows: repeat(5, auto);
     justify-items: center;
     align-items: center;
+}
+
+main {
+    background-color: #EEE8DC;
+    height: 100%;
+    width: 100%;
+    margin-top: 75px;
 }
  
 main p{
@@ -140,4 +145,45 @@ main #two{
 main #three{
     grid-column: 2;
     grid-row: 4;
+}
+footer{
+    background-color: #429ea6;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #32230F;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+
+footer .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h6{
+    color: #32230F;
+    margin: 0;
+    font-size: 1em;
+}
+
+footer p{
+    color: #32230F;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+footer a{
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
 }
