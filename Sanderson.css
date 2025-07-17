@@ -70,18 +70,26 @@ body {
 }
 
 .container {
-    margin: 20px; /* Reduced from 50px */
-    padding: 20px; /* Reduced from 40px */
+    margin: 40px auto; /* Center horizontally */
+    padding: 20px;
     background-color: #EEE8DC;
     height: 100%;
     width: 100%;
+    max-width: 700px; /* Limit width for centering */
     margin-top: 75px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
-    box-sizing: border-box; /* Added */
+    box-sizing: border-box;
+}
+
+/* For index.html, override .container to keep two-column grid */
+body#index .container {
+    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
 }
 
 main {
@@ -183,4 +191,5 @@ footer a{
     color: darkblue;
     text-decoration: none;
     font-weight: bold;
+    margin-left: 30px;
 }
